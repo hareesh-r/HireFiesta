@@ -373,110 +373,138 @@ function ResumeGenerator() {
                   next
                 </button>
               </div>
-              <div
-                data-name="resume-internal-div"
-                id="summary-container"
-                class="hide"
-              >
-                sdafjsadhflkjasdfhlskajdf
-                </div>
             </div>
           </div>
+          <div
+            data-name="resume-internal-div"
+            id="summary-container"
+            className="hide"
+          >
+            <div id="achievements-input-container">
+              <label htmlFor="achievement-details">Write an Achievement</label>
+              <textarea
+                name="achievements[]"
+                cols="50"
+                rows="2"
+                placeholder="Enter your achievement"
+              ></textarea>
+              <br />
+            </div>
+            <input type="hidden" value="1" id="total_achievements" />
+            <button
+              onClick={() =>
+                input_field_generator(
+                  "textarea",
+                  "achievements",
+                  "Enter your achievement"
+                )
+              }
+            >
+              Add
+            </button>
+            <br />
+            <button
+              value="education-container"
+              onClick={(e) => changeMainDivContent(e)}
+            >
+              back
+            </button>
+            <button onClick={() => fillResumeTemplet()}>preview</button>
+            <button onClick={() => downloadResume()}>Download</button>
+          </div>
+        </div>
 
-          <div data-name="resume-templet-container">
-            <div data-name="resume-templet1" className="hide">
-              <div id="doc2" className="yui-t7">
-                <div id="inner">
-                  <div id="hd">
-                    <div className="yui-gc">
-                      <div className="yui-u first">
-                        <h1 data-name="resumer-name"></h1>
-                        <h2 data-name="resumer-about-you"></h2>
-                      </div>
+        <div data-name="resume-templet-container">
+          <div data-name="resume-templet1" className="hide">
+            <div id="doc2" className="yui-t7">
+              <div id="inner">
+                <div id="hd">
+                  <div className="yui-gc">
+                    <div className="yui-u first">
+                      <h1 data-name="resumer-name"></h1>
+                      <h2 data-name="resumer-about-you"></h2>
+                    </div>
 
-                      <div className="yui-u">
-                        <div className="contact-info">
-                          <h2 data-name="resumer-city"></h2>
-                          <h3 data-name="resumer-email"></h3>
-                          <h3 data-name="resumer-mobile-number"></h3>
-                        </div>
+                    <div className="yui-u">
+                      <div className="contact-info">
+                        <h2 data-name="resumer-city"></h2>
+                        <h3 data-name="resumer-email"></h3>
+                        <h3 data-name="resumer-mobile-number"></h3>
                       </div>
                     </div>
-                  </div>
-
-                  <div id="bd">
-                    <div id="yui-main">
-                      <div className="yui-b">
-                        <div className="yui-gf">
-                          <div className="yui-u first">
-                            <h2>Profile</h2>
-                          </div>
-                          <div className="yui-u">
-                            <p
-                              className="enlarge"
-                              data-name="resumer-profile-details"
-                            ></p>
-                          </div>
-                        </div>
-
-                        <div className="yui-gf">
-                          <div className="yui-u first">
-                            <h2>Skills</h2>
-                          </div>
-                          <div
-                            className="yui-u"
-                            data-name="resumer-skills-details"
-                          ></div>
-                        </div>
-
-                        <div className="yui-gf">
-                          <div className="yui-u first">
-                            <h2>Experience</h2>
-                          </div>
-
-                          <div
-                            className="yui-u"
-                            data-name="resumer-experience-details"
-                          ></div>
-                        </div>
-
-                        <div className="yui-gf">
-                          <div className="yui-u first">
-                            <h2>Education</h2>
-                          </div>
-                          <div
-                            className="yui-u"
-                            data-name="resumer-education-details"
-                          ></div>
-                        </div>
-
-                        <div className="yui-gf last">
-                          <div className="yui-u first">
-                            <h2>Achievement</h2>
-                          </div>
-                          <div
-                            className="yui-u"
-                            data-name="resumer-achievements-details"
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="ft">
-                    <p>
-                      Jonathan Doe &mdash;{" "}
-                      <a href="mailto:name@yourdomain.com">
-                        name@yourdomain.com
-                      </a>{" "}
-                      &mdash; (313) - 867-5309
-                    </p>
                   </div>
                 </div>
+
+                <div id="bd">
+                  <div id="yui-main">
+                    <div className="yui-b">
+                      <div className="yui-gf">
+                        <div className="yui-u first">
+                          <h2>Profile</h2>
+                        </div>
+                        <div className="yui-u">
+                          <p
+                            className="enlarge"
+                            data-name="resumer-profile-details"
+                          ></p>
+                        </div>
+                      </div>
+
+                      <div className="yui-gf">
+                        <div className="yui-u first">
+                          <h2>Skills</h2>
+                        </div>
+                        <div
+                          className="yui-u"
+                          data-name="resumer-skills-details"
+                        ></div>
+                      </div>
+
+                      <div className="yui-gf">
+                        <div className="yui-u first">
+                          <h2>Experience</h2>
+                        </div>
+
+                        <div
+                          className="yui-u"
+                          data-name="resumer-experience-details"
+                        ></div>
+                      </div>
+
+                      <div className="yui-gf">
+                        <div className="yui-u first">
+                          <h2>Education</h2>
+                        </div>
+                        <div
+                          className="yui-u"
+                          data-name="resumer-education-details"
+                        ></div>
+                      </div>
+
+                      <div className="yui-gf last">
+                        <div className="yui-u first">
+                          <h2>Achievement</h2>
+                        </div>
+                        <div
+                          className="yui-u"
+                          data-name="resumer-achievements-details"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="ft">
+                  <p>
+                    Jonathan Doe &mdash;{" "}
+                    <a href="mailto:name@yourdomain.com">name@yourdomain.com</a>{" "}
+                    &mdash; (313) - 867-5309
+                  </p>
+                </div>
               </div>
-              <button onClick={() => hidePreview()} className="no-print">
-                Close
-              </button>
             </div>
+            <button onClick={() => hidePreview()} className="no-print">
+              Close
+            </button>
           </div>
         </div>
       </div>

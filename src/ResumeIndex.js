@@ -6,17 +6,17 @@ var experience_list = [];
 var achievements_list = [];
 
 export function changeMainDivContent(divIdDetails) {
-    var id_name = divIdDetails.target.getAttribute("value");
-    document
-      .querySelectorAll(`[data-name='resume-internal-div']`)
-      .forEach((div_details) => {
-        if (div_details.id === id_name) {
-          div_details.classList.remove("hide");
-        } else {
-          div_details.classList.add("hide");
-        }
-      });
-  }
+  var id_name = divIdDetails.target.getAttribute("value");
+  document
+    .querySelectorAll(`[data-name='resume-internal-div']`)
+    .forEach((div_details) => {
+      if (div_details.id === id_name) {
+        div_details.classList.remove("hide");
+      } else {
+        div_details.classList.add("hide");
+      }
+    });
+}
 
 export function fillResumeTemplet() {
   personal_info_details = {};
@@ -222,7 +222,10 @@ export function educationInsertionInResume() {
   }
 }
 
-export function getDetailsFromContainer(listNameOfWhereToStore, idNameOfTheContainer) {
+export function getDetailsFromContainer(
+  listNameOfWhereToStore,
+  idNameOfTheContainer
+) {
   var childElementList = document.getElementById(idNameOfTheContainer).children;
   for (var i = 0; i < childElementList.length; i++) {
     var child_info = childElementList[i].children;
@@ -241,7 +244,16 @@ export function getDetailsFromContainer(listNameOfWhereToStore, idNameOfTheConta
 
 export function downloadResume() {
   fillResumeTemplet();
-  window.location.print();
+  window.print();
+  window.onafterprint = function () {
+    window.location.reload(true);
+  };
+  window.matchMedia("print").addListener(function (media) {
+    if (media.matches) {
+    } else {
+      window.location.reload(true);
+    }
+  });
 }
 
 export function showPreview() {
@@ -254,13 +266,12 @@ export function hidePreview() {
   document.querySelector(`[data-name='resume-templet1']`).classList.add("hide");
 }
 
-
 export function input_field_generator(
   nameOfElementToBeCreated,
   nameOfTheBlock,
   BlockSpecificPlaceholder
 ) {
-    console.log("asdfasdfasdfasdf");
+  console.log("asdfasdfasdfasdf");
   const input_container = document.getElementById(
     nameOfTheBlock + "-input-container"
   );
@@ -448,14 +459,13 @@ export function field_specific_generator(
   nameForField,
   BlockSpecificPlaceholder,
   type1,
-  className=""
+  className = ""
 ) {
   const divIdDetails = document.createElement("div");
   const lable = document.createElement("lable");
   lable.innerHTML = lableForField;
   const inputField = document.createElement(nameOfElementToBeCreated);
-  if(className!=="")
-  inputField.classList.add("textarea");
+  if (className !== "") inputField.classList.add("textarea");
   inputField.type = type1;
   inputField.name = nameForField;
   inputField.placeholder = BlockSpecificPlaceholder;
