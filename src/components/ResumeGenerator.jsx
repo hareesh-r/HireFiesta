@@ -1,5 +1,5 @@
 import React from "react";
-import "./ResumeGenerator.css";
+import "../css/ResumeGenerator.css";
 import {
   changeMainDivContent,
   input_field_generator,
@@ -8,7 +8,7 @@ import {
   fillResumeTemplet,
   downloadResume,
   hidePreview,
-} from "./ResumeIndex.js";
+} from "../scripts/ResumeIndex.js";
 
 function ResumeGenerator() {
   return (
