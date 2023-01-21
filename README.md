@@ -7,7 +7,7 @@
 > **_NOTE:_** You need to have [Node.js](https://nodejs.org/) installed on your computer
 
 ``` 
-git clone https://github.com/hareesh-r/HireFeista.git 
+git clone https://github.com/hareesh-r/HireFiesta.git
 cd jobfair
 npm install
 npm start
