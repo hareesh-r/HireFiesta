@@ -1,11 +1,14 @@
 # Hire Fiesta
 
-### Hire Fiesta is your one-stop destination for connecting with top employers and finding your dream job. Browse through a wide range of job opportunities, attend virtual career fairs, and get expert advice to help you land your next career move
+### [Live Link](https://nodejs.org/)
 
-``` git clone https://github.com/hareesh-r/HireFeista.git ```
+**Hire Fiesta is your one-stop destination for connecting with top employers and finding your dream job. Browse through a wide range of job opportunities, attend virtual career fairs, and get expert advice to help you land your next career move**
 
-``` cd jobfair ```
+> **_NOTE:_** You need to have [Node.js](https://nodejs.org/) installed on your computer
 
-``` npm install ```
-
-``` npm start ```
+``` 
+git clone https://github.com/hareesh-r/HireFiesta.git
+cd jobfair
+npm install
+npm start
+ ```
