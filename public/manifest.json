@@ -1,25 +1,25 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Hire Fiesta",
+  "name": "Hire Fiesta is your one-stop destination for connecting with top employers and finding your dream job. Browse through a wide range of job opportunities, attend virtual career fairs, and get expert advice to help you land your next career move.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "HIRE.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "HIRE.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "HIRE.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#07408F",
+  "background_color": "#F35B10"
 }
