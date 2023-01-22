@@ -401,11 +401,12 @@ function ResumeGenerator() {
             className="hide"
           >
             <div id="achievements-input-container">
-              <label htmlFor="achievement-details">Write an Achievement</label>
+            
+              <label htmlFor="achievement-details">Write an Achievement</label><div class="relative achievements-relative">
               <textarea
                 name="achievements[]"
                 placeholder="Enter your achievement"
-              ></textarea>
+              ></textarea></div>
               <br />
             </div>
             <input type="hidden" value="1" id="total_achievements" />

@@ -847,7 +847,7 @@ textarea {
     outline-width: 0;
 }
 
-#skills-input-container {
+#skills-input-container,#summary-container {
     height: 222px;
     width: 818px;
     overflow-y: scroll;
@@ -855,7 +855,7 @@ textarea {
 
 .resume-overall-container {
     transition: all 0.5s;
-}
+} 
 
 .next-button {
     position: absolute;
@@ -954,4 +954,35 @@ textarea {
     position: fixed;
     top: 43px;
     right: 52px;
+}
+
+.download-button {
+    top: 674px;
+    position: absolute;
+}
+
+.preview-button {
+    top: 531px;
+    left: 217px;
+    position: absolute;
+}
+
+#achievements-input-container textarea {
+    width: 600px;
+    margin: 0px;
+    height: 100px;
+}
+
+.achievements-remove-button {
+    top: 142px !important;
+    left: 535px !important;
+    position: absolute;
+}
+
+.achievements-relative {
+    margin-top: 90px !important;
+}
+
+#summary-container {
+    height: 343px;
 }
