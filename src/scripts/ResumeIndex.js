@@ -42,7 +42,6 @@ export function changeMainDivContent(divIdDetails) {
       document.getElementsByClassName(
         "resume-overall-container"
       )[0].style.height = "739px";
-      console.log("summary");
       break;
     }
   }
@@ -104,13 +103,6 @@ export function fillResumeTemplet() {
       achievements_list.push(achievements.value);
     }
   });
-
-  console.log(personal_info_details);
-  console.log(profile_info_details);
-  console.log(skills_list);
-  console.log(achievements_list);
-  console.log(experience_list);
-  console.log(education_list);
 
   document.querySelector(`[data-name='resumer-name']`).textContent =
     personal_info_details["first-name"];
