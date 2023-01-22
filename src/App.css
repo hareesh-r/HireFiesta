@@ -11,7 +11,11 @@ body {
   background-color: white;
   font-family: 'Nunito', 'Poppins', sans-serif;
   background-image: linear-gradient(to left bottom, #e0e4ee, #dcd7ed, #e2c8e5, #edb7d2, #f5a8b5, #f5a8b5, #f5a8b5, #f5a8b5, #edb7d2, #e2c8e5, #dcd7ed, #e0e4ee);
+  /* background-image: url(../src/assets/images/ee375341-6726-41f5-a589-53954bce0c56.jpeg);
+  background-size: 2300px;
+  background-position:  bottom right; */
 }
+
 
 .App {
   min-height: 100vh;
@@ -30,7 +34,7 @@ body {
     -22px -22px 58px #ff7314;
 }
 
-.orange-button .active,
+.orange-button .orange-active,
 .orange-button:hover {
   border-radius: 84px;
   background: #F35B10;
