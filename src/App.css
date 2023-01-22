@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
+  text-transform: capitalize;
   --bg-color: #07408F;
   --button-color: #F35B10;
 }
@@ -8,8 +9,6 @@
 
 body {
   background-color: white;
-  /* background-image: linear-gradient(to left bottom, #4861a9, #5a5ca0, #665896, #6e558d, #745283, #855483, #955681, #a3597e, #c2627c, #dc6f75, #f0806a, #fc965d); */
-  /* background-image: linear-gradient(to right top, #4861a9, #5a5ca0, #665896, #6e558d, #745283, #855483, #955681, #a3597e, #c2627c, #dc6f75, #f0806a, #fc965d); */
   font-family: 'Nunito', 'Poppins', sans-serif;
   background-image: linear-gradient(to left bottom, #e0e4ee, #dcd7ed, #e2c8e5, #edb7d2, #f5a8b5, #f5a8b5, #f5a8b5, #f5a8b5, #edb7d2, #e2c8e5, #dcd7ed, #e0e4ee);
 }
@@ -29,17 +28,10 @@ body {
   background: linear-gradient(145deg, #ff6111, #db520e);
   box-shadow: 22px 22px 58px #b4430c,
     -22px -22px 58px #ff7314;
-
-
-
-
 }
 
 .orange-button .active,
 .orange-button:hover {
-
-
-
   border-radius: 84px;
   background: #F35B10;
   box-shadow: inset 22px 22px 58px #b4430c,
@@ -47,7 +39,12 @@ body {
 }
 
 .next-button,
-.back-button {
+.back-button,
+.remove-button,
+.add-button,
+.preview-button,
+.download-button,
+.close-button {
   color: rgb(255, 255, 255);
   cursor: pointer;
   border: none;
@@ -63,7 +60,25 @@ body {
   width: 86px;
 }
 
+.download-button {
+  margin-top: -145px;
+  width: 122px;
+}
 
+.preview-button {
+  margin-bottom: 20px;
+  width: 103px;
+}
+
+.remove-button {
+    top: 418px;
+    left: 439px;
+    position: absolute;
+}
+
+.back-button {
+  box-shadow: none;
+}
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -81,4 +96,9 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #07408F;
+}
+
+.relative {
+  position: relative;
+  margin-top: 131px !important;
 }

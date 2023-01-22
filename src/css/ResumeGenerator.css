@@ -834,7 +834,7 @@ body {
 #summary-container {
     text-align: end;
     margin-top: 30px;
-    width: 500px;
+    width: 550px;
 }
 
 #resume-main-div input,
@@ -847,14 +847,104 @@ textarea {
     outline-width: 0;
 }
 
-#skills-container {
-    left: 64px;
-    position: absolute;
-    top: 200px;
-}
-
 #skills-input-container {
     height: 222px;
     width: 818px;
     overflow-y: scroll;
+}
+
+.resume-overall-container {
+    transition: all 0.5s;
+}
+
+.next-button {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+}
+
+.back-button {
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+}
+
+#education-input-container,
+#experience-input-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 519px;
+    width: 550px;
+}
+
+#education-input-container>div,
+#experience-input-container>div {
+    margin: 32px;
+}
+
+.add-button {
+    position: absolute;
+    right: 32px;
+    bottom: 120px;
+}
+
+#profile-input-container,
+#achievements-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+}
+
+#profile-input-container textarea,
+#achievements-input-container textarea {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 50px;
+    border: none;
+    outline-width: 0
+}
+
+#experience-input-container .textarea {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 0px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.experience-remove-button {
+    top: 453px;
+    left: 394px;
+    position: absolute;
+}
+.skills-remove-button{
+    top: -9px;
+    left: 516px;
+    position: absolute;
+}
+
+
+.skills-relative {
+  margin-top: 30px !important;
+}
+
+.education-remove-button {
+    top: 451px;
+    left: 395px;
+    position: absolute;
+}
+
+[data-name="resume-templet-container"] {
+    position: fixed;
+}
+
+.close {
+    position: fixed;
+    top: 43px;
+    right: 52px;
 }

@@ -114,6 +114,7 @@ function ResumeGenerator() {
               value="profile-info-container"
               onClick={(e) => changeMainDivContent(e)}
               className="next-button"
+              id="profile-info-btn"
             >
               next
               <i class="fa-sharp fa-solid fa-forward"></i>
@@ -147,6 +148,7 @@ function ResumeGenerator() {
               value="skills-container"
               onClick={(e) => changeMainDivContent(e)}
               className="next-button"
+              id="skills-btn"
             >
               next
               <i class="fa-sharp fa-solid fa-forward"></i>
@@ -173,7 +175,9 @@ function ResumeGenerator() {
               onClick={() =>
                 input_field_generator("input", "skills", "Ex: Java")
               }
+              className="add-button"
             >
+              <i class="fa-sharp fa-solid fa-plus"></i>
               Add
             </button>
             <br />
@@ -190,6 +194,7 @@ function ResumeGenerator() {
               value="experience-container"
               onClick={(e) => changeMainDivContent(e)}
               className="next-button"
+              id="experience-btn"
             >
               next
               <i class="fa-sharp fa-solid fa-forward"></i>
@@ -259,7 +264,9 @@ function ResumeGenerator() {
               </div>
             </div>
             <input type="hidden" value="1" id="total_experience" />
-            <button onClick={() => experience_input_field_generator()}>
+            <button onClick={() => experience_input_field_generator()}
+              className="add-button">
+                <i class="fa-sharp fa-solid fa-plus"></i>
               Add
             </button>
             <br />
@@ -268,6 +275,7 @@ function ResumeGenerator() {
               value="skills-container"
               onClick={(e) => changeMainDivContent(e)}
               className="back-button"
+              id="skills-btn"
             ><i class="fa-sharp fa-solid fa-backward"></i>
               back
 
@@ -276,6 +284,7 @@ function ResumeGenerator() {
               value="education-container"
               onClick={(e) => changeMainDivContent(e)}
               className="next-button"
+              id="education-btn"
             >
               next
               <i class="fa-sharp fa-solid fa-forward"></i>
@@ -371,7 +380,10 @@ function ResumeGenerator() {
                 </div>
 
                 <input type="hidden" value="1" id="total_education" />
-                <button onClick={() => education_input_field_generator()}>
+                <button onClick={() => education_input_field_generator()}
+                
+                  className="add-button">
+                    <i class="fa-sharp fa-solid fa-plus"></i>
                   Add
                 </button>
                 <br />
@@ -380,6 +392,7 @@ function ResumeGenerator() {
                   value="experience-container"
                   onClick={(e) => changeMainDivContent(e)}
                   className="back-button"
+                  id="experience-btn"
                 > <i class="fa-sharp fa-solid fa-backward"></i>
                   back
 
@@ -388,6 +401,7 @@ function ResumeGenerator() {
                   value="summary-container"
                   onClick={(e) => changeMainDivContent(e)}
                   className="next-button"
+                  id="summary-btn"
                 >
                   next
                   <i class="fa-sharp fa-solid fa-forward"></i>
@@ -417,7 +431,9 @@ function ResumeGenerator() {
                   "Enter your achievement"
                 )
               }
+              className="add-button"
             >
+              <i class="fa-sharp fa-solid fa-plus"></i>
               Add
             </button>
             <br />
@@ -425,12 +441,13 @@ function ResumeGenerator() {
               value="education-container"
               onClick={(e) => changeMainDivContent(e)}
               className="back-button"
+              id="education-btn"
             ><i class="fa-sharp fa-solid fa-backward"></i>
               back
 
             </button>
-            <button onClick={() => fillResumeTemplet()}>preview</button>
-            <button onClick={() => downloadResume()}>Download</button>
+            <button className="preview-button" onClick={() => fillResumeTemplet()}><i class="fa-sharp fa-solid fa-file-pdf"></i> Preview</button>
+            <button className="download-button" onClick={() => downloadResume()}><i class="fa-sharp fa-solid fa-download"></i> Download</button>
           </div>
         </div>
 
@@ -515,7 +532,8 @@ function ResumeGenerator() {
                 </div>
               </div>
             </div>
-            <button onClick={() => hidePreview()} className="no-print">
+            <button onClick={() => hidePreview()} className="no-print close close-button">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
               Close
             </button>
           </div>

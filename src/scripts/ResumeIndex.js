@@ -6,7 +6,7 @@ var experience_list = [];
 var achievements_list = [];
 
 export function changeMainDivContent(divIdDetails) {
-  console.log();
+  console.log(divIdDetails.target.id);
   switch (divIdDetails.target.id) {
     case "personal-info-btn": {
       document.getElementsByClassName(
@@ -21,12 +21,15 @@ export function changeMainDivContent(divIdDetails) {
       break;
     }
     case "skills-btn": {
+      document.getElementsByClassName(
+        "resume-overall-container"
+      )[0].style.height = "627px";
       break;
     }
     case "experience-btn": {
       document.getElementsByClassName(
         "resume-overall-container"
-      )[0].style.height = "789px";
+      )[0].style.height = "875px";
       break;
     }
     case "education-btn": {
@@ -36,6 +39,9 @@ export function changeMainDivContent(divIdDetails) {
       break;
     }
     case "summary-btn": {
+      document.getElementsByClassName(
+        "resume-overall-container"
+      )[0].style.height = "739px";
       console.log("summary");
       break;
     }
@@ -53,6 +59,11 @@ export function changeMainDivContent(divIdDetails) {
 }
 
 export function fillResumeTemplet() {
+
+  document.getElementById("resume-main-div").style.opacity = 0;
+
+
+
   personal_info_details = {};
   profile_info_details = {};
   skills_list = [];
@@ -278,6 +289,9 @@ export function getDetailsFromContainer(
 }
 
 export function downloadResume() {
+
+  document.getElementById("resume-main-div").style.opacity = 0;
+
   fillResumeTemplet();
   window.print();
   window.onafterprint = function () {
@@ -298,6 +312,7 @@ export function showPreview() {
 }
 
 export function hidePreview() {
+  document.getElementById("resume-main-div").style.opacity = 1;
   document.querySelector(`[data-name='resume-templet1']`).classList.add("hide");
 }
 
@@ -306,13 +321,14 @@ export function input_field_generator(
   nameOfTheBlock,
   BlockSpecificPlaceholder
 ) {
-  console.log("asdfasdfasdfasdf");
   const input_container = document.getElementById(
     nameOfTheBlock + "-input-container"
   );
   const divForInput = document.createElement("div");
   var new_input_field_no =
     parseInt(document.getElementById("total_" + nameOfTheBlock).value) + 1;
+    divForInput.classList.add("relative");
+    divForInput.classList.add(nameOfTheBlock+"-relative");
   divForInput.dataset.name = nameOfTheBlock + "_" + new_input_field_no;
   const fieldToBeCreated = document.createElement(nameOfElementToBeCreated);
   fieldToBeCreated.type = "text";
@@ -321,7 +337,10 @@ export function input_field_generator(
   document.getElementById("total_" + nameOfTheBlock).value = new_input_field_no;
 
   const removeBtn = document.createElement("button");
-  removeBtn.innerText = "remove";
+  removeBtn.innerHTML =
+    "<i class='fa-sharp fa-solid fa-trash-xmark'></i>remove";
+  removeBtn.classList.add("remove-button");
+  removeBtn.classList.add(nameOfTheBlock+"-remove-button");
   removeBtn.addEventListener("click", input_field_remover);
   removeBtn.dataset.name = nameOfTheBlock + "_" + new_input_field_no;
 
@@ -348,6 +367,7 @@ export function experience_input_field_generator() {
   const divIdDetails = document.createElement("div");
   var new_experience_no =
     parseInt(document.getElementById("total_experience").value) + 1;
+    divIdDetails.classList.add("relative");
   divIdDetails.dataset.name = "experience_" + new_experience_no;
   var companyName = field_specific_generator(
     "Company name",
@@ -387,7 +407,10 @@ export function experience_input_field_generator() {
   );
 
   const removeBtn = document.createElement("button");
-  removeBtn.innerText = "remove";
+  removeBtn.innerHTML =
+    "<i class='fa-sharp fa-solid fa-trash-xmark'></i>remove";
+  removeBtn.classList.add("remove-button");
+  removeBtn.classList.add("experience-remove-button");
   removeBtn.addEventListener("click", input_field_remover);
   removeBtn.dataset.name = "experience_" + new_experience_no;
 
@@ -410,6 +433,7 @@ export function education_input_field_generator() {
   const divIdDetails = document.createElement("div");
   var new_education_no =
     parseInt(document.getElementById("total_education").value) + 1;
+    divIdDetails.classList.add("relative");
   divIdDetails.dataset.name = "education_" + new_education_no;
   var instituteName = field_specific_generator(
     "Enter name of your institute",
@@ -469,7 +493,10 @@ export function education_input_field_generator() {
   );
 
   const removeBtn = document.createElement("button");
-  removeBtn.innerText = "remove";
+  removeBtn.innerHTML =
+    "<i class='fa-sharp fa-solid fa-trash-xmark'></i>remove";
+  removeBtn.classList.add("remove-button");
+  removeBtn.classList.add("education-remove-button");
   removeBtn.addEventListener("click", input_field_remover);
   removeBtn.dataset.name = "education_" + new_education_no;
 
@@ -489,7 +516,7 @@ export function education_input_field_generator() {
 }
 
 export function field_specific_generator(
-  lableForField,
+  labelForField,
   nameOfElementToBeCreated,
   nameForField,
   BlockSpecificPlaceholder,
@@ -497,14 +524,14 @@ export function field_specific_generator(
   className = ""
 ) {
   const divIdDetails = document.createElement("div");
-  const lable = document.createElement("lable");
-  lable.innerHTML = lableForField;
+  const label = document.createElement("label");
+  label.innerHTML = labelForField;
   const inputField = document.createElement(nameOfElementToBeCreated);
   if (className !== "") inputField.classList.add("textarea");
   inputField.type = type1;
   inputField.name = nameForField;
   inputField.placeholder = BlockSpecificPlaceholder;
-  divIdDetails.appendChild(lable);
+  divIdDetails.appendChild(label);
   divIdDetails.appendChild(inputField);
   return divIdDetails;
 }
