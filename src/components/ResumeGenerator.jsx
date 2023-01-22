@@ -1,5 +1,7 @@
 import React from "react";
 import "../css/ResumeGenerator.css";
+import image from '../assets/images/image-removebg-preview.png'
+import image1 from "../assets/images/image-removebg-preview (1).png"
 import {
   changeMainDivContent,
   input_field_generator,
@@ -117,7 +119,7 @@ function ResumeGenerator() {
               id="profile-info-btn"
             >
               next
-              <i class="fa-sharp fa-solid fa-forward"></i>
+              <i className="fa-sharp fa-solid fa-forward"></i>
             </button>
           </div>
 
@@ -140,7 +142,7 @@ function ResumeGenerator() {
               value="personal-info-container"
               onClick={(e) => changeMainDivContent(e)}
               className="back-button"
-            ><i class="fa-sharp fa-solid fa-backward"></i>
+            ><i className="fa-sharp fa-solid fa-backward"></i>
               back
 
             </button>
@@ -151,7 +153,7 @@ function ResumeGenerator() {
               id="skills-btn"
             >
               next
-              <i class="fa-sharp fa-solid fa-forward"></i>
+              <i className="fa-sharp fa-solid fa-forward"></i>
             </button>
           </div>
 
@@ -177,7 +179,7 @@ function ResumeGenerator() {
               }
               className="add-button"
             >
-              <i class="fa-sharp fa-solid fa-plus"></i>
+              <i className="fa-sharp fa-solid fa-plus"></i>
               Add
             </button>
             <br />
@@ -186,7 +188,7 @@ function ResumeGenerator() {
               value="profile-info-container"
               onClick={(e) => changeMainDivContent(e)}
               className="back-button"
-            > <i class="fa-sharp fa-solid fa-backward"></i>
+            > <i className="fa-sharp fa-solid fa-backward"></i>
               back
 
             </button>
@@ -197,7 +199,7 @@ function ResumeGenerator() {
               id="experience-btn"
             >
               next
-              <i class="fa-sharp fa-solid fa-forward"></i>
+              <i className="fa-sharp fa-solid fa-forward"></i>
             </button>
           </div>
 
@@ -266,7 +268,7 @@ function ResumeGenerator() {
             <input type="hidden" value="1" id="total_experience" />
             <button onClick={() => experience_input_field_generator()}
               className="add-button">
-                <i class="fa-sharp fa-solid fa-plus"></i>
+                <i className="fa-sharp fa-solid fa-plus"></i>
               Add
             </button>
             <br />
@@ -276,7 +278,7 @@ function ResumeGenerator() {
               onClick={(e) => changeMainDivContent(e)}
               className="back-button"
               id="skills-btn"
-            ><i class="fa-sharp fa-solid fa-backward"></i>
+            ><i className="fa-sharp fa-solid fa-backward"></i>
               back
 
             </button>
@@ -287,7 +289,7 @@ function ResumeGenerator() {
               id="education-btn"
             >
               next
-              <i class="fa-sharp fa-solid fa-forward"></i>
+              <i className="fa-sharp fa-solid fa-forward"></i>
             </button>
           </div>
 
@@ -383,7 +385,7 @@ function ResumeGenerator() {
                 <button onClick={() => education_input_field_generator()}
                 
                   className="add-button">
-                    <i class="fa-sharp fa-solid fa-plus"></i>
+                    <i className="fa-sharp fa-solid fa-plus"></i>
                   Add
                 </button>
                 <br />
@@ -393,7 +395,7 @@ function ResumeGenerator() {
                   onClick={(e) => changeMainDivContent(e)}
                   className="back-button"
                   id="experience-btn"
-                > <i class="fa-sharp fa-solid fa-backward"></i>
+                > <i className="fa-sharp fa-solid fa-backward"></i>
                   back
 
                 </button>
@@ -404,7 +406,7 @@ function ResumeGenerator() {
                   id="summary-btn"
                 >
                   next
-                  <i class="fa-sharp fa-solid fa-forward"></i>
+                  <i className="fa-sharp fa-solid fa-forward"></i>
                 </button>
               </div>
             </div>
@@ -433,7 +435,7 @@ function ResumeGenerator() {
               }
               className="add-button"
             >
-              <i class="fa-sharp fa-solid fa-plus"></i>
+              <i className="fa-sharp fa-solid fa-plus"></i>
               Add
             </button>
             <br />
@@ -442,12 +444,12 @@ function ResumeGenerator() {
               onClick={(e) => changeMainDivContent(e)}
               className="back-button"
               id="education-btn"
-            ><i class="fa-sharp fa-solid fa-backward"></i>
+            ><i className="fa-sharp fa-solid fa-backward"></i>
               back
 
             </button>
-            <button className="preview-button" onClick={() => fillResumeTemplet()}><i class="fa-sharp fa-solid fa-file-pdf"></i> Preview</button>
-            <button className="download-button" onClick={() => downloadResume()}><i class="fa-sharp fa-solid fa-download"></i> Download</button>
+            <button className="preview-button" onClick={() => fillResumeTemplet()}><i className="fa-sharp fa-solid fa-file-pdf"></i> Preview</button>
+            <button className="download-button" onClick={() => downloadResume()}><i className="fa-sharp fa-solid fa-download"></i> Download</button>
           </div>
         </div>
 
@@ -533,7 +535,7 @@ function ResumeGenerator() {
               </div>
             </div>
             <button onClick={() => hidePreview()} className="no-print close close-button">
-            <i class="fa-sharp fa-solid fa-xmark"></i>
+            <i className="fa-sharp fa-solid fa-xmark"></i>
               Close
             </button>
           </div>

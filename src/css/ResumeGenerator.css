@@ -927,6 +927,13 @@ textarea {
     left: 516px;
     position: absolute;
 }
+.orange-active,
+.orange-button:hover {
+  border-radius: 84px;
+  background: #F35B10;
+  box-shadow: inset 22px 22px 58px #b4430c,
+    inset -22px -22px 58px #ff7314;
+}
 
 
 .skills-relative {

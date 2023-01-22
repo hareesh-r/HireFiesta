@@ -6,7 +6,7 @@ var experience_list = [];
 var achievements_list = [];
 
 export function changeMainDivContent(divIdDetails) {
-  console.log(divIdDetails.target.id);
+
   switch (divIdDetails.target.id) {
     case "personal-info-btn": {
       document.getElementsByClassName(
