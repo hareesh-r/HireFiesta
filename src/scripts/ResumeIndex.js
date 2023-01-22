@@ -6,6 +6,40 @@ var experience_list = [];
 var achievements_list = [];
 
 export function changeMainDivContent(divIdDetails) {
+  console.log();
+  switch (divIdDetails.target.id) {
+    case "personal-info-btn": {
+      document.getElementsByClassName(
+        "resume-overall-container"
+      )[0].style.height = "627px";
+      break;
+    }
+    case "profile-info-btn": {
+      document.getElementsByClassName(
+        "resume-overall-container"
+      )[0].style.height = "627px";
+      break;
+    }
+    case "skills-btn": {
+      break;
+    }
+    case "experience-btn": {
+      document.getElementsByClassName(
+        "resume-overall-container"
+      )[0].style.height = "789px";
+      break;
+    }
+    case "education-btn": {
+      document.getElementsByClassName(
+        "resume-overall-container"
+      )[0].style.height = "918px";
+      break;
+    }
+    case "summary-btn": {
+      console.log("summary");
+      break;
+    }
+  }
   var id_name = divIdDetails.target.getAttribute("value");
   document
     .querySelectorAll(`[data-name='resume-internal-div']`)
@@ -29,7 +63,8 @@ export function fillResumeTemplet() {
   var personal_info = document.getElementById(
     "personal-input-container"
   ).children;
-  for (var i = 0; i < personal_info.length; i++) {
+  let i;
+  for (i = 0; i < personal_info.length; i++) {
     if (personal_info[i].name !== undefined && personal_info[i].name !== "") {
       personal_info_details[personal_info[i].name] = personal_info[i].value;
     }
@@ -38,7 +73,7 @@ export function fillResumeTemplet() {
   var profile_info = document.getElementById(
     "profile-input-container"
   ).children;
-  for (var i = 0; i < profile_info.length; i++) {
+  for (i = 0; i < profile_info.length; i++) {
     if (profile_info[i].name !== undefined && profile_info[i].name !== "") {
       profile_info_details[profile_info[i].name] = profile_info[i].value;
     }

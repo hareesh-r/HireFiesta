@@ -782,11 +782,79 @@ body {
 .yui-gf {
     zoom: 1;
 }
+
 .hide {
     display: none;
 }
-.textarea{
-    width: 300px;
+
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-overall-container {
+    position: relative;
+    border-radius: 50px;
+    height: 600px;
+    width: 900px;
+    background-image: linear-gradient(to right top, #1658b5, #8752b3, #ff6a5c, #fc714a, #f57a37, #ec8422, #dd701d, #cd5c19, #bd4816, #ac3413);
+    -webkit-box-shadow: 46px 44px 96px 1px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 46px 44px 96px 1px rgba(0, 0, 0, 0.56);
+    box-shadow: 46px 44px 96px 1px rgba(0, 0, 0, 0.56);
+}
+
+#resume-nav-bar {
+    margin: 10px;
+    position: absolute;
+    background-image: linear-gradient(180deg, #ffffff00, #F35B10);
+    border-radius: 10px 10px 35px 35px;
+    top: 30px;
     height: 100px;
-    resize: both;
+    width: 850px;
+}
+
+#resume-nav-bar button {
+    padding: 20px;
+    margin: 10px;
+}
+
+#resume-main-div label {
+    color: white;
+    font-size: 26px;
+}
+
+#resume-internal-div,
+#education-input-container,
+#personal-input-container,
+#profile-info-container,
+#experience-container,
+#summary-container {
+    text-align: end;
+    margin-top: 30px;
+    width: 500px;
+}
+
+#resume-main-div input,
+textarea {
+    border-radius: 999px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border: none;
+    outline-width: 0;
+}
+
+#skills-container {
+    left: 64px;
+    position: absolute;
+    top: 200px;
+}
+
+#skills-input-container {
+    height: 222px;
+    width: 818px;
+    overflow-y: scroll;
 }

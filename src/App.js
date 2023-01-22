@@ -1,9 +1,9 @@
-import './App.css';
-import ResumeGenerator from '../src/components/ResumeGenerator';
+import "./App.css";
+import ResumeGenerator from "../src/components/ResumeGenerator";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App flex">
       <ResumeGenerator />
     </div>
   );

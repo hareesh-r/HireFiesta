@@ -12,11 +12,12 @@ import {
 
 function ResumeGenerator() {
   return (
-    <div>
-      <div>
+    <div className="flex">
+      <div className="resume-overall-container flex">
         <div id="resume-nav-bar" className="no-print">
           <span>
             <button
+              className="orange-button"
               id="personal-info-btn"
               value="personal-info-container"
               onClick={(e) => changeMainDivContent(e)}
@@ -26,6 +27,7 @@ function ResumeGenerator() {
           </span>
           <span>
             <button
+              className="orange-button"
               id="profile-info-btn"
               value="profile-info-container"
               onClick={(e) => changeMainDivContent(e)}
@@ -35,6 +37,7 @@ function ResumeGenerator() {
           </span>
           <span>
             <button
+              className="orange-button"
               id="skills-btn"
               value="skills-container"
               onClick={(e) => changeMainDivContent(e)}
@@ -44,6 +47,7 @@ function ResumeGenerator() {
           </span>
           <span>
             <button
+              className="orange-button"
               id="experience-btn"
               value="experience-container"
               onClick={(e) => changeMainDivContent(e)}
@@ -53,6 +57,7 @@ function ResumeGenerator() {
           </span>
           <span>
             <button
+              className="orange-button"
               id="education-btn"
               value="education-container"
               onClick={(e) => changeMainDivContent(e)}
@@ -62,6 +67,7 @@ function ResumeGenerator() {
           </span>
           <span>
             <button
+              className="orange-button"
               id="summary-btn"
               value="summary-container"
               onClick={(e) => changeMainDivContent(e)}
@@ -107,8 +113,10 @@ function ResumeGenerator() {
             <button
               value="profile-info-container"
               onClick={(e) => changeMainDivContent(e)}
+              className="next-button"
             >
               next
+              <i class="fa-sharp fa-solid fa-forward"></i>
             </button>
           </div>
 
@@ -123,8 +131,6 @@ function ResumeGenerator() {
               </label>
               <textarea
                 name="profile-details"
-                cols="50"
-                rows="5"
                 placeholder="Enter about yourself"
               ></textarea>
               <br />
@@ -132,14 +138,18 @@ function ResumeGenerator() {
             <button
               value="personal-info-container"
               onClick={(e) => changeMainDivContent(e)}
-            >
+              className="back-button"
+            ><i class="fa-sharp fa-solid fa-backward"></i>
               back
+
             </button>
             <button
               value="skills-container"
               onClick={(e) => changeMainDivContent(e)}
+              className="next-button"
             >
               next
+              <i class="fa-sharp fa-solid fa-forward"></i>
             </button>
           </div>
 
@@ -171,14 +181,18 @@ function ResumeGenerator() {
             <button
               value="profile-info-container"
               onClick={(e) => changeMainDivContent(e)}
-            >
+              className="back-button"
+            > <i class="fa-sharp fa-solid fa-backward"></i>
               back
+
             </button>
             <button
               value="experience-container"
               onClick={(e) => changeMainDivContent(e)}
+              className="next-button"
             >
               next
+              <i class="fa-sharp fa-solid fa-forward"></i>
             </button>
           </div>
 
@@ -213,8 +227,6 @@ function ResumeGenerator() {
                   </label>
                   <input
                     name="job-description"
-                    cols="50"
-                    rows="5"
                     className="textarea"
                     placeholder="Enter about your Experience"
                   />
@@ -255,14 +267,18 @@ function ResumeGenerator() {
             <button
               value="skills-container"
               onClick={(e) => changeMainDivContent(e)}
-            >
+              className="back-button"
+            ><i class="fa-sharp fa-solid fa-backward"></i>
               back
+
             </button>
             <button
               value="education-container"
               onClick={(e) => changeMainDivContent(e)}
+              className="next-button"
             >
               next
+              <i class="fa-sharp fa-solid fa-forward"></i>
             </button>
           </div>
 
@@ -363,14 +379,18 @@ function ResumeGenerator() {
                 <button
                   value="experience-container"
                   onClick={(e) => changeMainDivContent(e)}
-                >
+                  className="back-button"
+                > <i class="fa-sharp fa-solid fa-backward"></i>
                   back
+
                 </button>
                 <button
                   value="summary-container"
                   onClick={(e) => changeMainDivContent(e)}
+                  className="next-button"
                 >
                   next
+                  <i class="fa-sharp fa-solid fa-forward"></i>
                 </button>
               </div>
             </div>
@@ -384,8 +404,6 @@ function ResumeGenerator() {
               <label htmlFor="achievement-details">Write an Achievement</label>
               <textarea
                 name="achievements[]"
-                cols="50"
-                rows="2"
                 placeholder="Enter your achievement"
               ></textarea>
               <br />
@@ -406,8 +424,10 @@ function ResumeGenerator() {
             <button
               value="education-container"
               onClick={(e) => changeMainDivContent(e)}
-            >
+              className="back-button"
+            ><i class="fa-sharp fa-solid fa-backward"></i>
               back
+
             </button>
             <button onClick={() => fillResumeTemplet()}>preview</button>
             <button onClick={() => downloadResume()}>Download</button>
@@ -421,15 +441,15 @@ function ResumeGenerator() {
                 <div id="hd">
                   <div className="yui-gc">
                     <div className="yui-u first">
-                      <h1 data-name="resumer-name"></h1>
-                      <h2 data-name="resumer-about-you"></h2>
+                      <h1 data-name="resumer-name">&nbsp;</h1>
+                      <h2 data-name="resumer-about-you">&nbsp;</h2>
                     </div>
 
                     <div className="yui-u">
                       <div className="contact-info">
-                        <h2 data-name="resumer-city"></h2>
-                        <h3 data-name="resumer-email"></h3>
-                        <h3 data-name="resumer-mobile-number"></h3>
+                        <h2 data-name="resumer-city">&nbsp;</h2>
+                        <h3 data-name="resumer-email">&nbsp;</h3>
+                        <h3 data-name="resumer-mobile-number">&nbsp;</h3>
                       </div>
                     </div>
                   </div>
@@ -440,7 +460,7 @@ function ResumeGenerator() {
                     <div className="yui-b">
                       <div className="yui-gf">
                         <div className="yui-u first">
-                          <h2>Profile</h2>
+                          <h2>Profile&nbsp;</h2>
                         </div>
                         <div className="yui-u">
                           <p
@@ -452,7 +472,7 @@ function ResumeGenerator() {
 
                       <div className="yui-gf">
                         <div className="yui-u first">
-                          <h2>Skills</h2>
+                          <h2>Skills&nbsp;</h2>
                         </div>
                         <div
                           className="yui-u"
@@ -462,7 +482,7 @@ function ResumeGenerator() {
 
                       <div className="yui-gf">
                         <div className="yui-u first">
-                          <h2>Experience</h2>
+                          <h2>Experience&nbsp;</h2>
                         </div>
 
                         <div
@@ -473,7 +493,7 @@ function ResumeGenerator() {
 
                       <div className="yui-gf">
                         <div className="yui-u first">
-                          <h2>Education</h2>
+                          <h2>Education&nbsp;</h2>
                         </div>
                         <div
                           className="yui-u"
@@ -483,7 +503,7 @@ function ResumeGenerator() {
 
                       <div className="yui-gf last">
                         <div className="yui-u first">
-                          <h2>Achievement</h2>
+                          <h2>Achievement&nbsp;</h2>
                         </div>
                         <div
                           className="yui-u"
@@ -492,13 +512,6 @@ function ResumeGenerator() {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div id="ft">
-                  <p>
-                    Jonathan Doe &mdash;{" "}
-                    <a href="mailto:name@yourdomain.com">name@yourdomain.com</a>{" "}
-                    &mdash; (313) - 867-5309
-                  </p>
                 </div>
               </div>
             </div>
