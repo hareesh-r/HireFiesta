@@ -240,24 +240,16 @@ function ResumeGenerator() {
                 <div>
                   <label htmlFor="start-date">Start date</label>
                   <input
-                    type="number"
-                    min="1900"
-                    max="2099"
-                    step="1"
+                    type="month"
                     name="start-date"
-                    placeholder="Ex: 2016"
                   />
                   <br />
                 </div>
                 <div>
                   <label htmlFor="end-date">End date</label>
                   <input
-                    type="number"
-                    min="1900"
-                    max="2099"
-                    step="1"
+                    type="month"
                     name="end-date"
-                    placeholder="Ex: 2016"
                   />
                   <br />
                 </div>
@@ -266,7 +258,7 @@ function ResumeGenerator() {
             <input type="hidden" value="1" id="total_experience" />
             <button onClick={() => experience_input_field_generator()}
               className="add-button">
-                <i class="fa-sharp fa-solid fa-plus"></i>
+              <i class="fa-sharp fa-solid fa-plus"></i>
               Add
             </button>
             <br />
@@ -355,35 +347,27 @@ function ResumeGenerator() {
                     Start year of education
                   </label>
                   <input
-                    type="number"
-                    min="1900"
-                    max="2099"
-                    step="1"
+                    type="month"
                     name="education-start-date"
-                    placeholder="Ex: 2016"
                   />
                   <br />
-                  <div>
+                </div>
+                <div>
                     <label htmlFor="education-end-date">
                       Select graducation year
                     </label>
                     <input
-                      type="number"
-                      min="1900"
-                      max="2099"
-                      step="1"
+                      type="month"
                       name="education-end-date"
-                      placeholder="Ex: 2016"
                     />
                     <br />
-                  </div>
                 </div>
 
                 <input type="hidden" value="1" id="total_education" />
                 <button onClick={() => education_input_field_generator()}
-                
+
                   className="add-button">
-                    <i class="fa-sharp fa-solid fa-plus"></i>
+                  <i class="fa-sharp fa-solid fa-plus"></i>
                   Add
                 </button>
                 <br />
@@ -428,7 +412,8 @@ function ResumeGenerator() {
                 input_field_generator(
                   "textarea",
                   "achievements",
-                  "Enter your achievement"
+                  "Enter your achievement",
+                  "textarea"
                 )
               }
               className="add-button"
@@ -533,7 +518,7 @@ function ResumeGenerator() {
               </div>
             </div>
             <button onClick={() => hidePreview()} className="no-print close close-button">
-            <i class="fa-sharp fa-solid fa-xmark"></i>
+              <i class="fa-sharp fa-solid fa-xmark"></i>
               Close
             </button>
           </div>

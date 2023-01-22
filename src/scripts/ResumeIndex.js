@@ -208,7 +208,7 @@ export function jobInsertionInResume() {
     jobTitle.innerText = experience_list[i]["job-title"];
     const jobStartAndEndDate = document.createElement("h4");
     jobStartAndEndDate.innerText =
-      experience_list[i]["start-date"] + "-" + experience_list[i]["end-date"];
+      experience_list[i]["start-date"] + "  -  " + experience_list[i]["end-date"];
     const jobDescription = document.createElement("h3");
     jobDescription.innerText = experience_list[i]["job-description"];
 
@@ -244,7 +244,7 @@ export function educationInsertionInResume() {
     const educationStartAndEndDate = document.createElement("h4");
     educationStartAndEndDate.innerText =
       education_list[i]["education-start-date"] +
-      "-" +
+      "  -  " +
       education_list[i]["education-end-date"];
     const educationDescription = document.createElement("h3");
     educationDescription.innerText =
@@ -319,7 +319,8 @@ export function hidePreview() {
 export function input_field_generator(
   nameOfElementToBeCreated,
   nameOfTheBlock,
-  BlockSpecificPlaceholder
+  BlockSpecificPlaceholder,
+  classNameString=""
 ) {
   const input_container = document.getElementById(
     nameOfTheBlock + "-input-container"
@@ -331,7 +332,11 @@ export function input_field_generator(
     divForInput.classList.add(nameOfTheBlock+"-relative");
   divForInput.dataset.name = nameOfTheBlock + "_" + new_input_field_no;
   const fieldToBeCreated = document.createElement(nameOfElementToBeCreated);
-  fieldToBeCreated.type = "text";
+  if(classNameString === ""){
+    fieldToBeCreated.type = "text";
+  }else{
+    fieldToBeCreated.classList.add(classNameString);
+  }
   fieldToBeCreated.name = nameOfTheBlock + "[]";
   fieldToBeCreated.placeholder = BlockSpecificPlaceholder;
   document.getElementById("total_" + nameOfTheBlock).value = new_input_field_no;
@@ -396,14 +401,14 @@ export function experience_input_field_generator() {
     "input",
     "start-date",
     "",
-    "date"
+    "month"
   );
   var endDate = field_specific_generator(
     "End date",
     "input",
     "end-date",
     "",
-    "date"
+    "month"
   );
 
   const removeBtn = document.createElement("button");
@@ -482,14 +487,14 @@ export function education_input_field_generator() {
     "input",
     "education-start-date",
     "",
-    "date"
+    "month"
   );
   var endDate = field_specific_generator(
     "Select graducation year",
     "input",
     "education-end-date",
     "",
-    "date"
+    "month"
   );
 
   const removeBtn = document.createElement("button");
