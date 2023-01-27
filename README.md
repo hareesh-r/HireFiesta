@@ -8,7 +8,8 @@
 
 ``` 
 git clone https://github.com/hareesh-r/HireFiesta.git
-cd jobfair
+cd HireFiesta
+catalyst init (select HireFiesta dont create any client or function)
 npm install
-npm start
+catalyst serve
  ```
