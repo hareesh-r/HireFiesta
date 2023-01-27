@@ -1,0 +1,525 @@
+[debug] [2023-01-27T18:21:11.861Z] : 
+[debug] [2023-01-27T18:21:11.862Z] : ----------------------------------------------------------------------
+[debug] [2023-01-27T18:21:11.862Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2023-01-27T18:21:11.863Z] : CLI Version:  1.13.3
+[debug] [2023-01-27T18:21:11.863Z] : Platform:     win32
+[debug] [2023-01-27T18:21:11.864Z] : Node Version: v18.13.0
+[debug] [2023-01-27T18:21:11.865Z] : Time:         Fri Jan 27 2023 23:51:11 GMT+0530 (India Standard Time)
+[debug] [2023-01-27T18:21:11.865Z] : ----------------------------------------------------------------------
+[debug] [2023-01-27T18:21:11.865Z] : 
+[debug] [2023-01-27T18:21:12.735Z] : > authorizing via signed-in user option
+[debug] [2023-01-27T18:21:12.735Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-01-27T18:21:12.751Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001 
+
+[debug] [2023-01-27T18:21:13.699Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Jan 2023 18:21:13 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=54f0ae93-616f-423d-9fe6-f5ca0ecd35d8;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=54f0ae93-616f-423d-9fe6-f5ca0ecd35d8;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-27T18:21:13.703Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/environment 
+
+[debug] [2023-01-27T18:21:14.529Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Jan 2023 18:21:14 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=97d19612-e1aa-419c-b688-26961fde9b77;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=97d19612-e1aa-419c-b688-26961fde9b77;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-27T18:21:14.806Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-01-27T18:21:15.656Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Jan 2023 18:21:15 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=548fd4a4-6c19-4879-af68-f3d5bb9898ba;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=548fd4a4-6c19-4879-af68-f3d5bb9898ba;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-27T18:21:15.660Z] : unknown eol undefined hence skipping check
+[info] [2023-01-27T18:21:15.724Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:21:15.725Z] : 
+[info] [2023-01-27T18:21:18.972Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-01-27T18:21:18.974Z] : i client[client]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-01-27T18:21:27.370Z] : [react-plugin]: Compiled successfully!
+[info] [2023-01-27T18:21:27.371Z] : [react-plugin]: 
+[info] [2023-01-27T18:21:27.371Z] : [react-plugin]: You can now view client in the browser.
+[info] [2023-01-27T18:21:27.371Z] : [react-plugin]: 
+[info] [2023-01-27T18:21:27.372Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-01-27T18:21:27.372Z] : [react-plugin]:   On Your Network:  http://192.168.29.253:3000/app/
+[info] [2023-01-27T18:21:27.372Z] : [react-plugin]: 
+[info] [2023-01-27T18:21:27.372Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-01-27T18:21:27.372Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-01-27T18:21:27.372Z] : [react-plugin]: 
+[info] [2023-01-27T18:35:15.366Z] : [react-plugin]: Compiling...
+[info] [2023-01-27T18:35:15.823Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-27T18:35:15.823Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-01-27T18:35:15.823Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-27T18:35:15.824Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-27T18:35:17.767Z] : [react-plugin]: Compiling...
+[info] [2023-01-27T18:35:17.899Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-27T18:35:17.900Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-01-27T18:35:17.900Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-27T18:35:17.900Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-27T18:35:44.189Z] : [react-plugin]: Compiling...
+[info] [2023-01-27T18:35:44.374Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-27T18:35:44.375Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-01-27T18:35:44.375Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-27T18:35:44.375Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-27T18:35:46.925Z] : [react-plugin]: Compiling...
+[info] [2023-01-27T18:35:47.104Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-27T18:35:47.104Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-01-27T18:35:47.105Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-27T18:35:47.105Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-27T18:35:48.828Z] : [react-plugin]: Compiling...
+[info] [2023-01-27T18:35:48.982Z] : [react-plugin]: Failed to compile.
+
+[info] [2023-01-27T18:35:48.982Z] : [react-plugin]: SyntaxError: C:\Users\srini\Documents\project\HireFiesta\client\src\App.js: Expected corresponding JSX closing tag for <h1>. (9:12)
+   7 |     return (
+   8 |       <div className="App">
+>  9 |         <h1></>
+     |             ^
+  10 |       </div>
+  11 |     );
+  12 |   }
+[info] [2023-01-27T18:35:51.889Z] : [react-plugin]: Compiling...
+[info] [2023-01-27T18:35:52.076Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-27T18:35:52.076Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:8:  'logo' is defined but never used                                                  no-unused-vars
+  Line 9:9:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+[info] [2023-01-27T18:35:52.076Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-27T18:35:52.076Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-27T18:36:27.715Z] : [react-plugin]: Compiling...
+[info] [2023-01-27T18:36:27.902Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-27T18:36:27.902Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-01-27T18:36:27.903Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-27T18:36:27.903Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-27T18:36:30.069Z] : [react-plugin]: Compiling...
+[info] [2023-01-27T18:36:30.172Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-27T18:36:30.172Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-01-27T18:36:30.172Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-27T18:36:30.172Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-27T18:37:40.755Z] : [react-plugin]: Compiling...
+[info] [2023-01-27T18:37:41.038Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-27T18:37:41.039Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:8:  'logo' is defined but never used                                                  no-unused-vars
+  Line 9:9:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+[info] [2023-01-27T18:37:41.039Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-27T18:37:41.039Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-27T18:37:49.330Z] : [react-plugin]: Compiling...
+[info] [2023-01-27T18:37:49.533Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-27T18:37:49.533Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-01-27T18:37:49.534Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-27T18:37:49.534Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-27T18:38:38.381Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:38:38.415Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:38:38.415Z] : 
+[info] [2023-01-27T18:38:38.529Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:38:57.313Z] : 
+change of package-lock.json in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:38:57.342Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:38:57.342Z] : 
+[info] [2023-01-27T18:38:57.457Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:39:13.831Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:39:13.855Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:39:13.856Z] : 
+[info] [2023-01-27T18:39:13.965Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:39:17.795Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:39:17.818Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:39:17.819Z] : 
+[info] [2023-01-27T18:39:17.925Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:39:19.385Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:39:19.410Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:39:19.410Z] : 
+[info] [2023-01-27T18:39:19.517Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:39:52.064Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:39:52.089Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:39:52.089Z] : 
+[info] [2023-01-27T18:39:52.205Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:40:02.609Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:40:02.633Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:40:02.633Z] : 
+[info] [2023-01-27T18:40:02.737Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:40:06.192Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:40:06.217Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:40:06.217Z] : 
+[info] [2023-01-27T18:40:06.318Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:40:29.312Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:40:29.342Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:40:29.342Z] : 
+[info] [2023-01-27T18:40:29.444Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:40:37.978Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:40:38.005Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:40:38.005Z] : 
+[info] [2023-01-27T18:40:38.110Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:40:43.063Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:40:43.092Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:40:43.092Z] : 
+[info] [2023-01-27T18:40:43.208Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:40:50.476Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:40:50.505Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:40:50.505Z] : 
+[info] [2023-01-27T18:40:50.616Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:40:52.696Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:40:52.724Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:40:52.725Z] : 
+[info] [2023-01-27T18:40:52.832Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:41:01.232Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:41:01.258Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:41:01.258Z] : 
+[info] [2023-01-27T18:41:01.362Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:41:06.980Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:41:07.006Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:41:07.006Z] : 
+[info] [2023-01-27T18:41:07.109Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:41:08.943Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:41:08.973Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:41:08.973Z] : 
+[info] [2023-01-27T18:41:09.086Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:41:11.201Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:41:11.236Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:41:11.236Z] : 
+[info] [2023-01-27T18:41:11.350Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:41:12.354Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:41:12.380Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:41:12.381Z] : 
+[info] [2023-01-27T18:41:12.494Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:41:15.269Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:41:15.294Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:41:15.295Z] : 
+[info] [2023-01-27T18:41:15.403Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:41:19.136Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:41:19.162Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:41:19.162Z] : 
+[info] [2023-01-27T18:41:19.264Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:41:21.743Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:41:21.779Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:41:21.779Z] : 
+[info] [2023-01-27T18:41:21.893Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:41:24.630Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:41:24.656Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:41:24.656Z] : 
+[info] [2023-01-27T18:41:24.764Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:41:26.682Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:41:26.707Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:41:26.708Z] : 
+[info] [2023-01-27T18:41:26.812Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:41:36.349Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:41:36.380Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:41:36.380Z] : 
+[info] [2023-01-27T18:41:36.481Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:42:01.660Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:42:01.699Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:42:01.700Z] : 
+[info] [2023-01-27T18:42:01.806Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:42:03.285Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:42:03.313Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:42:03.313Z] : 
+[info] [2023-01-27T18:42:03.414Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:42:04.415Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:42:04.444Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:42:04.444Z] : 
+[info] [2023-01-27T18:42:04.557Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:42:05.590Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:42:05.619Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:42:05.619Z] : 
+[info] [2023-01-27T18:42:05.725Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:42:06.801Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:42:06.826Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:42:06.826Z] : 
+[info] [2023-01-27T18:42:06.935Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:42:09.517Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:42:09.542Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:42:09.542Z] : 
+[info] [2023-01-27T18:42:09.646Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:42:12.034Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:42:12.065Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:42:12.065Z] : 
+[info] [2023-01-27T18:42:12.176Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:42:16.821Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[info] [2023-01-27T18:42:16.853Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:42:16.854Z] : 
+[info] [2023-01-27T18:42:16.963Z] : i server[main_function]: ready!
+[info] [2023-01-27T18:42:52.489Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[error] [2023-01-27T18:42:52.497Z] : uncaughtException: Cannot set headers after they are sent to the client
+Error: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:400:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.writeHead (node:_http_server:377:21)
+    at ProxyServer.<anonymous> (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\serve\server\lib\master.js:136:21)
+    at ProxyServer.emit (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\eventemitter3\index.js:184:35)
+    at ClientRequest.proxyError (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\http-proxy\lib\http-proxy\passes\web-incoming.js:158:18)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:496:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] [2023-01-27T18:42:52.502Z] : × An unexpected error has occurred.
+[debug] [2023-01-27T18:42:52.502Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:19:17)
+    at process.<anonymous> (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:87:28)
+    at process.emit (node:events:525:35)
+    at process._fatalException (node:internal/process/execution:149:25)
+[debug] [2023-01-27T18:42:52.502Z] : Original Error: Error: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:400:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.writeHead (node:_http_server:377:21)
+    at ProxyServer.<anonymous> (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\serve\server\lib\master.js:136:21)
+    at ProxyServer.emit (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\eventemitter3\index.js:184:35)
+    at ClientRequest.proxyError (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\http-proxy\lib\http-proxy\passes\web-incoming.js:158:18)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:496:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[debug] [2023-01-27T18:42:52.502Z] : Error Status: 500
+[info] [2023-01-27T18:42:52.502Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2023-01-27T18:43:19.641Z] : 
+[debug] [2023-01-27T18:43:19.642Z] : ----------------------------------------------------------------------
+[debug] [2023-01-27T18:43:19.643Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2023-01-27T18:43:19.643Z] : CLI Version:  1.13.3
+[debug] [2023-01-27T18:43:19.644Z] : Platform:     win32
+[debug] [2023-01-27T18:43:19.644Z] : Node Version: v18.13.0
+[debug] [2023-01-27T18:43:19.646Z] : Time:         Sat Jan 28 2023 00:13:19 GMT+0530 (India Standard Time)
+[debug] [2023-01-27T18:43:19.646Z] : ----------------------------------------------------------------------
+[debug] [2023-01-27T18:43:19.646Z] : 
+[debug] [2023-01-27T18:43:20.641Z] : > authorizing via signed-in user option
+[debug] [2023-01-27T18:43:20.641Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-01-27T18:43:20.657Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001 
+
+[debug] [2023-01-27T18:43:21.708Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Jan 2023 18:43:21 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=f98e1d06-5bc9-4b19-aedb-6891900c4569;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f98e1d06-5bc9-4b19-aedb-6891900c4569;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-27T18:43:21.712Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/environment 
+
+[debug] [2023-01-27T18:43:22.564Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Jan 2023 18:43:22 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=61c727ce-d6df-4b62-baa5-819e4ccecd1c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=61c727ce-d6df-4b62-baa5-819e4ccecd1c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-27T18:43:22.765Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-01-27T18:43:23.536Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Jan 2023 18:43:23 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=25ad938c-73f1-47ed-b3f0-cc110ad3d57e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=25ad938c-73f1-47ed-b3f0-cc110ad3d57e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-27T18:43:23.539Z] : unknown eol undefined hence skipping check
+[info] [2023-01-27T18:43:23.608Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:43:23.608Z] : 
+[info] [2023-01-27T18:43:26.729Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-01-27T18:43:26.731Z] : i client[client]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-01-27T18:43:28.894Z] : [react-plugin]: Compiled successfully!
+[info] [2023-01-27T18:43:28.894Z] : [react-plugin]: 
+[info] [2023-01-27T18:43:28.894Z] : [react-plugin]: You can now view client in the browser.
+[info] [2023-01-27T18:43:28.895Z] : [react-plugin]: 
+[info] [2023-01-27T18:43:28.895Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-01-27T18:43:28.895Z] : [react-plugin]:   On Your Network:  http://192.168.29.253:3000/app/
+[info] [2023-01-27T18:43:28.895Z] : [react-plugin]: 
+[info] [2023-01-27T18:43:28.896Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-01-27T18:43:28.896Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-01-27T18:43:28.896Z] : [react-plugin]: 
+[info] [2023-01-27T18:47:24.682Z] : Shutting down server
+[error] [2023-01-27T18:47:24.691Z] : uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:400:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.writeHead (node:_http_server:377:21)
+    at ProxyServer.<anonymous> (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\serve\server\lib\master.js:136:21)
+    at ProxyServer.emit (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\eventemitter3\index.js:184:35)
+    at ClientRequest.proxyError (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\http-proxy\lib\http-proxy\passes\web-incoming.js:158:18)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:496:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+[error] [2023-01-27T18:47:24.695Z] : × An unexpected error has occurred.
+[debug] [2023-01-27T18:47:24.695Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:19:17)
+    at process.<anonymous> (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:87:28)
+    at process.emit (node:events:525:35)
+    at process._fatalException (node:internal/process/execution:149:25)
+[debug] [2023-01-27T18:47:24.695Z] : Original Error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:400:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.writeHead (node:_http_server:377:21)
+    at ProxyServer.<anonymous> (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\serve\server\lib\master.js:136:21)
+    at ProxyServer.emit (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\eventemitter3\index.js:184:35)
+    at ClientRequest.proxyError (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\http-proxy\lib\http-proxy\passes\web-incoming.js:158:18)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:496:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+[debug] [2023-01-27T18:47:24.695Z] : Error Status: 500
+[info] [2023-01-27T18:47:24.695Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2023-01-27T18:47:43.574Z] : 
+[debug] [2023-01-27T18:47:43.576Z] : ----------------------------------------------------------------------
+[debug] [2023-01-27T18:47:43.576Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2023-01-27T18:47:43.577Z] : CLI Version:  1.13.3
+[debug] [2023-01-27T18:47:43.578Z] : Platform:     win32
+[debug] [2023-01-27T18:47:43.578Z] : Node Version: v18.13.0
+[debug] [2023-01-27T18:47:43.580Z] : Time:         Sat Jan 28 2023 00:17:43 GMT+0530 (India Standard Time)
+[debug] [2023-01-27T18:47:43.580Z] : ----------------------------------------------------------------------
+[debug] [2023-01-27T18:47:43.580Z] : 
+[debug] [2023-01-27T18:47:44.559Z] : > authorizing via signed-in user option
+[debug] [2023-01-27T18:47:44.559Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-01-27T18:47:44.573Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001 
+
+[debug] [2023-01-27T18:47:45.467Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Jan 2023 18:47:45 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=2893769f-b70e-4d96-9db0-0fabd8edebb2;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=2893769f-b70e-4d96-9db0-0fabd8edebb2;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-27T18:47:45.471Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/environment 
+
+[debug] [2023-01-27T18:47:46.305Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Jan 2023 18:47:46 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=1caf7f4e-8f9a-44f3-a2c6-e0ddc9958991;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1caf7f4e-8f9a-44f3-a2c6-e0ddc9958991;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-27T18:47:46.525Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-01-27T18:47:47.358Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Jan 2023 18:47:47 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=c558aa55-dacd-4839-b6d8-501a34f83b85;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c558aa55-dacd-4839-b6d8-501a34f83b85;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-27T18:47:47.362Z] : unknown eol undefined hence skipping check
+[info] [2023-01-27T18:47:47.431Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-27T18:47:47.432Z] : 
+[info] [2023-01-27T18:47:50.634Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-01-27T18:47:50.636Z] : i client[client]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-01-27T18:47:52.792Z] : [react-plugin]: Compiled successfully!
+[info] [2023-01-27T18:47:52.792Z] : [react-plugin]: 
+[info] [2023-01-27T18:47:52.793Z] : [react-plugin]: You can now view client in the browser.
+[info] [2023-01-27T18:47:52.793Z] : [react-plugin]: 
+[info] [2023-01-27T18:47:52.793Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-01-27T18:47:52.793Z] : [react-plugin]:   On Your Network:  http://192.168.29.253:3000/app/
+[info] [2023-01-27T18:47:52.793Z] : [react-plugin]: 
+[info] [2023-01-27T18:47:52.793Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-01-27T18:47:52.794Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-01-27T18:47:52.794Z] : [react-plugin]: 
+[info] [2023-01-27T18:48:54.592Z] : 
+change of index.js in main_function detected. Preparing your function, please wait...
+[error] [2023-01-27T18:48:54.604Z] : uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:400:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.writeHead (node:_http_server:377:21)
+    at ProxyServer.<anonymous> (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\serve\server\lib\master.js:136:21)
+    at ProxyServer.emit (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\eventemitter3\index.js:184:35)
+    at ClientRequest.proxyError (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\http-proxy\lib\http-proxy\passes\web-incoming.js:158:18)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:496:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+[error] [2023-01-27T18:48:54.609Z] : × An unexpected error has occurred.
+[debug] [2023-01-27T18:48:54.610Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:19:17)
+    at process.<anonymous> (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:87:28)
+    at process.emit (node:events:525:35)
+    at process._fatalException (node:internal/process/execution:149:25)
+[debug] [2023-01-27T18:48:54.611Z] : Original Error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:400:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.writeHead (node:_http_server:377:21)
+    at ProxyServer.<anonymous> (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\serve\server\lib\master.js:136:21)
+    at ProxyServer.emit (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\eventemitter3\index.js:184:35)
+    at ClientRequest.proxyError (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\http-proxy\lib\http-proxy\passes\web-incoming.js:158:18)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:496:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+[debug] [2023-01-27T18:48:54.611Z] : Error Status: 500
+[info] [2023-01-27T18:48:54.611Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2023-01-27T18:48:54.613Z] : uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:400:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.writeHead (node:_http_server:377:21)
+    at ProxyServer.<anonymous> (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\serve\server\lib\master.js:128:21)
+    at ProxyServer.emit (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\eventemitter3\index.js:210:27)
+    at ClientRequest.proxyError (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\http-proxy\lib\http-proxy\passes\web-incoming.js:165:18)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:496:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+[error] [2023-01-27T18:48:54.614Z] : × An unexpected error has occurred.
+[debug] [2023-01-27T18:48:54.614Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:19:17)
+    at process.<anonymous> (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:87:28)
+    at process.emit (node:events:525:35)
+    at process._fatalException (node:internal/process/execution:149:25)
+[debug] [2023-01-27T18:48:54.614Z] : Original Error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:400:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.writeHead (node:_http_server:377:21)
+    at ProxyServer.<anonymous> (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\serve\server\lib\master.js:128:21)
+    at ProxyServer.emit (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\eventemitter3\index.js:210:27)
+    at ClientRequest.proxyError (C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\http-proxy\lib\http-proxy\passes\web-incoming.js:165:18)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:496:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+[debug] [2023-01-27T18:48:54.614Z] : Error Status: 500
+[info] [2023-01-27T18:48:54.614Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
