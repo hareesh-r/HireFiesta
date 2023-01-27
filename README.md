@@ -9,7 +9,11 @@
 ``` 
 git clone https://github.com/hareesh-r/HireFiesta.git
 cd HireFiesta
-catalyst init (select HireFiesta dont create any client or function)
+catalyst init
+```
+##### Select HireFiesta don't Create any Client or Function 
+##### Then
+```
 npm install
 catalyst serve
  ```
