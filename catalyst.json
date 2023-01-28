@@ -1,7 +1,8 @@
 {
   "functions": {
     "targets": [
-      "Main_Function"
+      "Main_Function",
+      "Image_Function"
     ],
     "ignore": [],
     "source": "functions"

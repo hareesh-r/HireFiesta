@@ -15,5 +15,6 @@ catalyst init
 ##### Then
 ```
 npm install
+npm test
 catalyst serve
  ```
