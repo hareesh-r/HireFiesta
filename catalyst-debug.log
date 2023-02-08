@@ -1,0 +1,61 @@
+[debug] [2023-01-28T07:15:49.524Z] : 
+[debug] [2023-01-28T07:15:49.525Z] : ----------------------------------------------------------------------
+[debug] [2023-01-28T07:15:49.525Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2023-01-28T07:15:49.526Z] : CLI Version:  1.13.3
+[debug] [2023-01-28T07:15:49.527Z] : Platform:     win32
+[debug] [2023-01-28T07:15:49.527Z] : Node Version: v18.13.0
+[debug] [2023-01-28T07:15:49.528Z] : Time:         Sat Jan 28 2023 12:45:49 GMT+0530 (India Standard Time)
+[debug] [2023-01-28T07:15:49.529Z] : ----------------------------------------------------------------------
+[debug] [2023-01-28T07:15:49.529Z] : 
+[debug] [2023-01-28T07:15:50.432Z] : > authorizing via signed-in user option
+[debug] [2023-01-28T07:15:50.432Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-01-28T07:15:50.445Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001 
+
+[debug] [2023-01-28T07:15:51.372Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 28 Jan 2023 07:15:51 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=e31bdf6e-5de5-4b7b-a21c-9c91635e78dc;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e31bdf6e-5de5-4b7b-a21c-9c91635e78dc;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-28T07:15:51.377Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/environment 
+
+[debug] [2023-01-28T07:15:52.169Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 28 Jan 2023 07:15:52 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=d4290830-750b-4c81-bd67-748a09baba59;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d4290830-750b-4c81-bd67-748a09baba59;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-28T07:15:52.511Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-01-28T07:15:53.296Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 28 Jan 2023 07:15:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=bae480d7-01bb-4f6b-b411-2f10675fac26;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=bae480d7-01bb-4f6b-b411-2f10675fac26;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-28T07:15:53.299Z] : unknown eol undefined hence skipping check
+[debug] [2023-01-28T07:15:53.300Z] : unknown eol undefined hence skipping check
+[debug] [2023-01-28T07:15:53.347Z] : http port : '3010' is not available. Hence port '3011' will be used instead.
+[info] [2023-01-28T07:15:53.436Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-01-28T07:15:53.437Z] : 
+[info] [2023-01-28T07:15:53.466Z] : i server[image_function]: URL : http://localhost:3000/server/image_function/
+[info] [2023-01-28T07:15:53.467Z] : 
+[info] [2023-01-28T07:15:58.509Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-01-28T07:15:58.538Z] : i client[client]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-01-28T07:16:01.459Z] : [react-plugin]: Compiled successfully!
+[info] [2023-01-28T07:16:01.459Z] : [react-plugin]: 
+[info] [2023-01-28T07:16:01.460Z] : [react-plugin]: You can now view client in the browser.
+[info] [2023-01-28T07:16:01.460Z] : [react-plugin]: 
+[info] [2023-01-28T07:16:01.460Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-01-28T07:16:01.461Z] : [react-plugin]:   On Your Network:  http://192.168.29.253:3000/app/
+[info] [2023-01-28T07:16:01.461Z] : [react-plugin]: 
+[info] [2023-01-28T07:16:01.462Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-01-28T07:16:01.462Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-01-28T07:16:01.463Z] : [react-plugin]: 
+[info] [2023-01-28T07:16:32.198Z] : 
+change of index.js in image_function detected. Preparing your function, please wait...
+[info] [2023-01-28T07:16:32.234Z] : i server[image_function]: URL : http://localhost:3000/server/image_function/
+[info] [2023-01-28T07:16:32.234Z] : 
+[info] [2023-01-28T07:16:32.344Z] : i server[image_function]: ready!
+[info] [2023-01-28T07:16:47.971Z] : Shutting down server
+[info] [2023-01-28T07:16:47.978Z] : 
+[info] [2023-01-28T07:16:47.979Z] : √ Shutdown complete
+[debug] [2023-01-28T07:16:47.980Z] : NO ERRORS REGISTERED
+[debug] [2023-01-28T07:16:47.980Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-01-28T07:16:47.980Z] : TOTAL DURATION OF COMMAND EXEC : 57567
+[debug] [2023-01-28T07:16:47.993Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+

@@ -1,0 +1,37 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "10813000000033001",
+      "name": "HireFiesta",
+      "domain": {
+        "id": "10052474580",
+        "name": "hirefiesta-784931989.development"
+      },
+      "env": [
+        {
+          "idx": 1,
+          "id": "784931989",
+          "name": "Development",
+          "type": 3,
+          "env_status": "Active",
+          "project_details": {
+            "project_name": "HireFiesta",
+            "id": "10813000000033001",
+            "project_type": "Live"
+          },
+          "is_default": true,
+          "action_required": false
+        }
+      ]
+    }
+  ]
+}
