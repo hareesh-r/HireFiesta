@@ -1,10 +1,13 @@
 const login = (data,app) => {
-        const {userName,userEmail,userPassword,isCompany} = data
+        const {userName,userEmail,userPassword,isCompany,website} = data
 
         let rowData = {
             "Name": userName,
             "Email" : userEmail,
             "PassWord" : userPassword
+        }
+        let companyData = {
+            "CompanyWebsite" : website
         }
 
             var signupConfig = {
@@ -28,9 +31,24 @@ const login = (data,app) => {
                      insertPromise.then((row) => {
                         return "success"
                         });
+                        insertPromise.then((row)=>{
+                            if(isCompany){
+                                companyData["UserID"] = row.ROWID
+                                let datastore = app.datastore();
+                                    let table = datastore.table("Company");
+                                    let insertPromise = table.insertRow(companyData);
+                                     insertPromise.then((row) => {
+                                        return "success"
+                                        });
+                                    insertPromise.catch(e=>console.log(e))
+                            }
+                        })
+
                     insertPromise.catch(e=>console.log(e))
             });
             registerPromise.catch(e=>console.log(e))
+
+            
 
 }
 

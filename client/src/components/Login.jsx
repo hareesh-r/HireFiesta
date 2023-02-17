@@ -15,6 +15,7 @@ const [showSignUpAsCompany,setshowSignUpAsCompany] = useState(false)
 const [userName,setUserName]  = useState("")
 const [userEmail,setUserEmail]  = useState("")
 const [userPassWord,setUserPassWord]  = useState("")
+const [website,setWebsite] = useState("");
 const [isCompany,setisCompany]  = useState(false)
 const [url,setUrl] = useState(API.Main)
  
@@ -25,7 +26,7 @@ const [url,setUrl] = useState(API.Main)
 const signup = () =>{
 
   if(userName==""||userPassWord==""||userEmail==""){
-    console.log("repeating")
+    alert("enter details")
   }
   else{
     POST_TO_DB()
@@ -43,7 +44,8 @@ const POST_TO_DB = ()=>{
       "userName" : userName,
       "userEmail" : userEmail,
       "userPassword" : userPassWord,
-      "isCompany" : isCompany
+      "isCompany" : isCompany,
+      "website" : website
     }),
   }
     fetch(url+"addUser",requestoptions)
@@ -136,6 +138,13 @@ return (
         <input type="text" name="Password" value={userPassWord}
           onChange={(e) => {
             setUserPassWord(e.target.value)
+            setisCompany(true)}} />
+      </label>
+      <label>
+        Website
+        <input type="url" name="website" value={website}
+          onChange={(e) => {
+            setWebsite(e.target.value)
             setisCompany(true)}} />
       </label>
       <input value="true" name="isCompany" hidden={true}/>
