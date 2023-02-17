@@ -1,5 +1,6 @@
 {
     "name": "client",
     "version": "0.0.1",
-    "homepage": "index.html"
+    "homepage": "index.html",
+    "login_redirect":"index.html/#/home"
 }
