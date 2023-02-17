@@ -16486,3 +16486,344 @@ Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 18:46:22 GMT","conten
 [debug] [2023-02-17T18:46:23.497Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
 
 [debug] [2023-02-17T18:46:23.498Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2023-02-17T18:56:34.091Z] : 
+[debug] [2023-02-17T18:56:34.092Z] : ----------------------------------------------------------------------
+[debug] [2023-02-17T18:56:34.093Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2023-02-17T18:56:34.093Z] : CLI Version:  1.13.3
+[debug] [2023-02-17T18:56:34.094Z] : Platform:     win32
+[debug] [2023-02-17T18:56:34.094Z] : Node Version: v18.13.0
+[debug] [2023-02-17T18:56:34.095Z] : Time:         Sat Feb 18 2023 00:26:34 GMT+0530 (India Standard Time)
+[debug] [2023-02-17T18:56:34.096Z] : ----------------------------------------------------------------------
+[debug] [2023-02-17T18:56:34.096Z] : 
+[debug] [2023-02-17T18:56:35.038Z] : > authorizing via signed-in user option
+[debug] [2023-02-17T18:56:35.039Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-17T18:56:35.054Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001 
+
+[debug] [2023-02-17T18:56:36.081Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 18:56:35 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=331efcbd-9561-43ba-b8aa-d84f21ca29c6;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=331efcbd-9561-43ba-b8aa-d84f21ca29c6;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-17T18:56:36.086Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/environment 
+
+[debug] [2023-02-17T18:56:36.979Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 18:56:36 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=9cdf32ef-9aea-4fa1-b902-fb4b366ffb68;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=9cdf32ef-9aea-4fa1-b902-fb4b366ffb68;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-17T18:56:37.209Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-17T18:56:38.127Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 18:56:37 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=0ed2abdf-88e9-4db8-b313-9c136123578e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=0ed2abdf-88e9-4db8-b313-9c136123578e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-17T18:56:38.130Z] : unknown eol undefined hence skipping check
+[debug] [2023-02-17T18:56:38.131Z] : unknown eol undefined hence skipping check
+[debug] [2023-02-17T18:56:38.164Z] : http port : '3010' is not available. Hence port '3011' will be used instead.
+[info] [2023-02-17T18:56:38.240Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T18:56:38.241Z] : 
+[info] [2023-02-17T18:56:38.266Z] : i server[image_function]: URL : http://localhost:3000/server/image_function/
+[info] [2023-02-17T18:56:38.266Z] : 
+[info] [2023-02-17T18:56:41.536Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-02-17T18:56:41.538Z] : i client[client]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-02-17T18:56:46.642Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-17T18:56:46.642Z] : [react-plugin]: [eslint] 
+src\components\Login.jsx
+  Line 2:8:    '$' is defined but never used                no-unused-vars
+  Line 3:8:    'Home' is defined but never used             no-unused-vars
+  Line 20:12:  'setUrl' is assigned a value but never used  no-unused-vars
+  Line 28:14:  Expected '===' and instead saw '=='          eqeqeq
+  Line 28:32:  Expected '===' and instead saw '=='          eqeqeq
+  Line 28:47:  Expected '===' and instead saw '=='          eqeqeq
+[info] [2023-02-17T18:56:46.642Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-17T18:56:46.642Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-17T18:57:27.305Z] : [react-plugin]: Compiling...
+[info] [2023-02-17T18:57:27.869Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-17T18:57:27.869Z] : [react-plugin]: [eslint] 
+src\components\Login.jsx
+  Line 2:8:    '$' is defined but never used                no-unused-vars
+  Line 3:8:    'Home' is defined but never used             no-unused-vars
+  Line 20:12:  'setUrl' is assigned a value but never used  no-unused-vars
+  Line 28:14:  Expected '===' and instead saw '=='          eqeqeq
+  Line 28:32:  Expected '===' and instead saw '=='          eqeqeq
+  Line 28:47:  Expected '===' and instead saw '=='          eqeqeq
+[info] [2023-02-17T18:57:27.869Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-17T18:57:27.869Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-17T18:57:33.358Z] : [react-plugin]: Compiling...
+[info] [2023-02-17T18:57:33.681Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-17T18:57:33.682Z] : [react-plugin]: [eslint] 
+src\components\Login.jsx
+  Line 2:8:    '$' is defined but never used                no-unused-vars
+  Line 3:8:    'Home' is defined but never used             no-unused-vars
+  Line 20:12:  'setUrl' is assigned a value but never used  no-unused-vars
+  Line 28:14:  Expected '===' and instead saw '=='          eqeqeq
+  Line 28:32:  Expected '===' and instead saw '=='          eqeqeq
+  Line 28:47:  Expected '===' and instead saw '=='          eqeqeq
+[info] [2023-02-17T18:57:33.682Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-17T18:57:33.682Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-17T18:57:35.201Z] : [react-plugin]: Compiling...
+[info] [2023-02-17T18:57:35.507Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-17T18:57:35.508Z] : [react-plugin]: [eslint] 
+src\components\Login.jsx
+  Line 2:8:    '$' is defined but never used                no-unused-vars
+  Line 3:8:    'Home' is defined but never used             no-unused-vars
+  Line 20:12:  'setUrl' is assigned a value but never used  no-unused-vars
+  Line 28:14:  Expected '===' and instead saw '=='          eqeqeq
+  Line 28:32:  Expected '===' and instead saw '=='          eqeqeq
+  Line 28:47:  Expected '===' and instead saw '=='          eqeqeq
+[info] [2023-02-17T18:57:35.508Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-17T18:57:35.508Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-17T18:58:54.881Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T18:58:54.914Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T18:58:54.914Z] : 
+[info] [2023-02-17T18:58:55.019Z] : i server[main_function]: ready!
+[info] [2023-02-17T18:58:59.697Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T18:58:59.724Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T18:58:59.724Z] : 
+[info] [2023-02-17T18:58:59.830Z] : i server[main_function]: ready!
+[info] [2023-02-17T18:59:08.836Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T18:59:08.863Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T18:59:08.863Z] : 
+[info] [2023-02-17T18:59:08.976Z] : i server[main_function]: ready!
+[info] [2023-02-17T18:59:25.672Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T18:59:25.700Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T18:59:25.700Z] : 
+[info] [2023-02-17T18:59:25.813Z] : i server[main_function]: ready!
+[info] [2023-02-17T18:59:29.956Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T18:59:29.986Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T18:59:29.986Z] : 
+[info] [2023-02-17T18:59:30.100Z] : i server[main_function]: ready!
+[info] [2023-02-17T18:59:32.197Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T18:59:32.225Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T18:59:32.225Z] : 
+[info] [2023-02-17T18:59:32.337Z] : i server[main_function]: ready!
+[info] [2023-02-17T18:59:36.121Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T18:59:36.152Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T18:59:36.152Z] : 
+[info] [2023-02-17T18:59:36.267Z] : i server[main_function]: ready!
+[info] [2023-02-17T18:59:40.894Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T18:59:40.924Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T18:59:40.924Z] : 
+[info] [2023-02-17T18:59:41.037Z] : i server[main_function]: ready!
+[info] [2023-02-17T18:59:44.681Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T18:59:44.707Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T18:59:44.707Z] : 
+[info] [2023-02-17T18:59:44.808Z] : i server[main_function]: ready!
+[info] [2023-02-17T18:59:58.925Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T18:59:58.956Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T18:59:58.956Z] : 
+[info] [2023-02-17T18:59:59.058Z] : i server[main_function]: ready!
+[info] [2023-02-17T19:00:01.618Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T19:00:01.645Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T19:00:01.645Z] : 
+[info] [2023-02-17T19:00:01.758Z] : i server[main_function]: ready!
+[info] [2023-02-17T19:00:02.764Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T19:00:02.793Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T19:00:02.793Z] : 
+[info] [2023-02-17T19:00:02.906Z] : i server[main_function]: ready!
+[info] [2023-02-17T19:00:12.091Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T19:00:12.121Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T19:00:12.121Z] : 
+[info] [2023-02-17T19:00:12.231Z] : i server[main_function]: ready!
+[info] [2023-02-17T19:00:15.845Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T19:00:15.872Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T19:00:15.873Z] : 
+[info] [2023-02-17T19:00:15.985Z] : i server[main_function]: ready!
+[info] [2023-02-17T19:00:19.245Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T19:00:19.275Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T19:00:19.275Z] : 
+[info] [2023-02-17T19:00:19.387Z] : i server[main_function]: ready!
+[info] [2023-02-17T19:00:36.420Z] : 
+change of helperUtil\login.js in main_function detected. Preparing your function, please wait...
+[info] [2023-02-17T19:00:36.447Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T19:00:36.448Z] : 
+[info] [2023-02-17T19:00:36.558Z] : i server[main_function]: ready!
+[info] [2023-02-17T19:01:36.105Z] : Shutting down server
+[info] [2023-02-17T19:01:36.112Z] : 
+[info] [2023-02-17T19:01:36.113Z] : √ Shutdown complete
+[debug] [2023-02-17T19:01:36.113Z] : NO ERRORS REGISTERED
+[debug] [2023-02-17T19:01:36.114Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-02-17T19:01:36.114Z] : TOTAL DURATION OF COMMAND EXEC : 301098
+[debug] [2023-02-17T19:01:36.127Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-02-17T19:01:39.690Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 19:01:38 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=dfeb0af7-a89b-4f02-8e2d-8d3a9cf87f9d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=dfeb0af7-a89b-4f02-8e2d-8d3a9cf87f9d;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=F5D16059E90A3A9B554C4BA0407D40EF; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY"}
+
+[debug] [2023-02-17T19:01:39.692Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2023-02-17T19:01:39.693Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2023-02-17T19:01:41.611Z] : 
+[debug] [2023-02-17T19:01:41.613Z] : ----------------------------------------------------------------------
+[debug] [2023-02-17T19:01:41.613Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2023-02-17T19:01:41.614Z] : CLI Version:  1.13.3
+[debug] [2023-02-17T19:01:41.614Z] : Platform:     win32
+[debug] [2023-02-17T19:01:41.615Z] : Node Version: v18.13.0
+[debug] [2023-02-17T19:01:41.616Z] : Time:         Sat Feb 18 2023 00:31:41 GMT+0530 (India Standard Time)
+[debug] [2023-02-17T19:01:41.617Z] : ----------------------------------------------------------------------
+[debug] [2023-02-17T19:01:41.617Z] : 
+[debug] [2023-02-17T19:01:42.571Z] : > authorizing via signed-in user option
+[debug] [2023-02-17T19:01:42.571Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-17T19:01:42.585Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001 
+
+[debug] [2023-02-17T19:01:43.484Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 19:01:42 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=c3237803-6600-46af-b411-920f22473bac;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c3237803-6600-46af-b411-920f22473bac;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-17T19:01:43.489Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/environment 
+
+[debug] [2023-02-17T19:01:44.325Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 19:01:43 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=e47a59e3-2ad3-4886-9279-05d05b1ef87a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e47a59e3-2ad3-4886-9279-05d05b1ef87a;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-17T19:01:44.545Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-17T19:01:45.399Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 19:01:44 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=e6bc2bbf-efd8-466f-867b-312cffb2888f;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e6bc2bbf-efd8-466f-867b-312cffb2888f;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-17T19:01:45.403Z] : unknown eol undefined hence skipping check
+[debug] [2023-02-17T19:01:45.403Z] : unknown eol undefined hence skipping check
+[debug] [2023-02-17T19:01:45.436Z] : http port : '3010' is not available. Hence port '3011' will be used instead.
+[info] [2023-02-17T19:01:45.495Z] : i server[main_function]: URL : http://localhost:3000/server/main_function/
+[info] [2023-02-17T19:01:45.496Z] : 
+[info] [2023-02-17T19:01:45.518Z] : i server[image_function]: URL : http://localhost:3000/server/image_function/
+[info] [2023-02-17T19:01:45.518Z] : 
+[info] [2023-02-17T19:01:48.779Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-02-17T19:01:48.782Z] : i client[client]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-02-17T19:01:51.013Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-17T19:01:51.014Z] : [react-plugin]: 
+[info] [2023-02-17T19:01:51.015Z] : [react-plugin]: You can now view client in the browser.
+[info] [2023-02-17T19:01:51.015Z] : [react-plugin]: 
+[info] [2023-02-17T19:01:51.015Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-17T19:01:51.015Z] : [react-plugin]:   On Your Network:  http://192.168.29.207:3000/app/
+[info] [2023-02-17T19:01:51.015Z] : [react-plugin]: 
+[info] [2023-02-17T19:01:51.016Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-17T19:01:51.016Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-17T19:01:51.016Z] : [react-plugin]: 
+[info] [2023-02-17T19:02:22.975Z] : Shutting down server
+[info] [2023-02-17T19:02:22.981Z] : 
+[info] [2023-02-17T19:02:22.982Z] : √ Shutdown complete
+[debug] [2023-02-17T19:02:22.982Z] : NO ERRORS REGISTERED
+[debug] [2023-02-17T19:02:22.982Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-02-17T19:02:22.982Z] : TOTAL DURATION OF COMMAND EXEC : 40432
+[debug] [2023-02-17T19:02:22.998Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-02-17T19:02:24.664Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 19:02:23 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=fa66dc68-69d0-4454-9830-95156259d4c4;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fa66dc68-69d0-4454-9830-95156259d4c4;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=ABE5558D2F23686306B72FD033833EA3; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY"}
+
+[debug] [2023-02-17T19:02:24.666Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2023-02-17T19:02:24.667Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2023-02-17T19:02:30.736Z] : 
+[debug] [2023-02-17T19:02:30.737Z] : ----------------------------------------------------------------------
+[debug] [2023-02-17T19:02:30.738Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\srini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2023-02-17T19:02:30.739Z] : CLI Version:  1.13.3
+[debug] [2023-02-17T19:02:30.739Z] : Platform:     win32
+[debug] [2023-02-17T19:02:30.740Z] : Node Version: v18.13.0
+[debug] [2023-02-17T19:02:30.741Z] : Time:         Sat Feb 18 2023 00:32:30 GMT+0530 (India Standard Time)
+[debug] [2023-02-17T19:02:30.741Z] : ----------------------------------------------------------------------
+[debug] [2023-02-17T19:02:30.742Z] : 
+[debug] [2023-02-17T19:02:31.698Z] : > authorizing via signed-in user option
+[debug] [2023-02-17T19:02:31.699Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-17T19:02:31.715Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001 
+
+[debug] [2023-02-17T19:02:32.640Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 19:02:31 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=f2d387d0-5b98-4459-a7ab-efda48220ffa;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f2d387d0-5b98-4459-a7ab-efda48220ffa;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-17T19:02:32.644Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/environment 
+
+[debug] [2023-02-17T19:02:33.469Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 19:02:32 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=ee5fd9ed-0a59-4878-a7c0-0f1f0c24dd2b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ee5fd9ed-0a59-4878-a7c0-0f1f0c24dd2b;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-17T19:02:33.484Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-17T19:02:34.381Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 19:02:33 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=bc9d313b-09fb-435f-9cd0-694767e4cf14;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=bc9d313b-09fb-435f-9cd0-694767e4cf14;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-17T19:02:34.384Z] : unknown eol undefined hence skipping check
+[debug] [2023-02-17T19:02:34.385Z] : unknown eol undefined hence skipping check
+[debug] [2023-02-17T19:02:35.392Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/server/upsert 
+
+[debug] [2023-02-17T19:02:41.052Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 19:02:40 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=0cba8c17-b8b6-4b19-880d-a02b39b67969;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=0cba8c17-b8b6-4b19-880d-a02b39b67969;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-17T19:02:41.055Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/server/upsert 
+
+[debug] [2023-02-17T19:02:46.386Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 19:02:45 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=e985c082-ede7-4750-b105-0d0b6754f0ce;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e985c082-ede7-4750-b105-0d0b6754f0ce;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-17T19:02:46.489Z] : i Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2023-02-17T19:02:46.489Z] : i Building Application...
+[info] [2023-02-17T19:02:48.870Z] : [react-plugin]: Creating an optimized production build...
+[info] [2023-02-17T19:02:55.901Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-17T19:02:55.901Z] : [react-plugin]: [eslint] 
+src\components\Login.jsx
+  Line 2:8:    '$' is defined but never used                no-unused-vars
+  Line 3:8:    'Home' is defined but never used             no-unused-vars
+  Line 20:12:  'setUrl' is assigned a value but never used  no-unused-vars
+  Line 28:14:  Expected '===' and instead saw '=='          eqeqeq
+  Line 28:32:  Expected '===' and instead saw '=='          eqeqeq
+  Line 28:47:  Expected '===' and instead saw '=='          eqeqeq
+[info] [2023-02-17T19:02:55.902Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-17T19:02:55.902Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-17T19:02:55.902Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2023-02-17T19:02:55.918Z] : [react-plugin]:   83.77 kB (+47 B)  build\static\js\main.9d982f6a.js
+[info] [2023-02-17T19:02:55.918Z] : [react-plugin]:   750 B             build\static\css\main.4447796b.css
+[info] [2023-02-17T19:02:55.918Z] : [react-plugin]:  
+[debug] [2023-02-17T19:02:56.410Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/10813000000033001/webapp 
+
+[debug] [2023-02-17T19:03:04.308Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 19:03:03 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=d941a56c-10fb-49e3-b058-0a772b514cdf;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d941a56c-10fb-49e3-b058-0a772b514cdf;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-17T19:03:04.310Z] : 
+[info] [2023-02-17T19:03:04.311Z] : i functions(main_function): URL => https://hirefiesta-784931989.development.catalystserverless.com/server/main_function/
+[info] [2023-02-17T19:03:04.311Z] : √ functions(main_function): deploy successful
+[info] [2023-02-17T19:03:04.312Z] : i functions(image_function): URL => https://hirefiesta-784931989.development.catalystserverless.com/server/image_function/
+[info] [2023-02-17T19:03:04.312Z] : √ functions(image_function): deploy successful
+[info] [2023-02-17T19:03:04.312Z] : 
+[info] [2023-02-17T19:03:04.312Z] : √ client: deploy successful
+[info] [2023-02-17T19:03:04.312Z] : i client: URL => https://hirefiesta-784931989.development.catalystserverless.com/app/index.html
+[info] [2023-02-17T19:03:04.313Z] : 
+[info] [2023-02-17T19:03:04.313Z] : √ Catalyst deploy complete!
+[debug] [2023-02-17T19:03:04.313Z] : NO ERRORS REGISTERED
+[debug] [2023-02-17T19:03:04.314Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2023-02-17T19:03:04.314Z] : TOTAL DURATION OF COMMAND EXEC : 32636
+[debug] [2023-02-17T19:03:04.325Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-02-17T19:03:06.306Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Fri, 17 Feb 2023 19:03:05 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=33195b0c-9939-4da0-bbc2-c6ffc0aff823;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=33195b0c-9939-4da0-bbc2-c6ffc0aff823;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=9E7BCB09F7BE794301F4CB6069919C1F; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY"}
+
+[debug] [2023-02-17T19:03:06.307Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2023-02-17T19:03:06.308Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
