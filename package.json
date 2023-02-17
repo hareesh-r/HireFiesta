@@ -1,9 +1,10 @@
 {
   "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
     "run-script-os": "^1.1.6"
   },
   "scripts": {
-    "test":"run-script-os",
+    "test": "run-script-os",
     "test:win32": "script.bat",
     "test:darwin:linux": "sh script.sh",
     "test:default": "echo 'This will run on any platform that does not have its own script'"
