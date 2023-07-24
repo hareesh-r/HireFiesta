@@ -1,0 +1,97 @@
+version: 2.1
+variables:
+  REGISTRY: https://registry-url
+  name: mahesh
+runners:
+  runner1:
+    memory: 1gb
+  runner2:
+    memory: 256mb
+images:
+  hub-image:
+    registry: https://registry-url.com
+    image: docker-hub/image
+    auth:
+      username: thangaram
+      password: secret
+  own-image:
+    image: http://ownimageurl
+jobs:
+  server-build:
+    image: hub-image
+    cwd: ./server
+    steps:
+      - npm install
+      - npm run build
+    artifacts:
+      upload:
+        - location: bucket/dckjs
+          path: ./bin
+        - location: dvsdv
+          path: /cbdjb
+  client-build:
+    cwd: ./client
+    steps:
+      - npm install
+      - npm run build
+    artifacts:
+      upload:
+        - location: bucket/dckjs
+          path: ./bin
+        - location: dvsdv
+          path: /cbdjb
+  approval:
+    type: approval
+    message: Approve this job to continue!
+    reviewers:
+      - thangaram.s@zohotest.com
+    notify:
+      on-start:
+        - thangaram.s@zohotest.com
+  deploy:
+    runner: runner2
+    image: own-image
+    steps:
+      - npm publish
+    notify:
+      on-end:
+        - thangaram.s@zohotest.com
+stages:
+  - name: build
+    jobs:
+      - - server-build
+        - client-build
+      - deploy
+  - name: validate
+    jobs:
+      - approval
+      - server-build
+  - name: deploy
+    jobs:
+      - deploy
+    when:
+      or:
+        - and:
+            - or:
+                - and:
+                    - equal:
+                        - main
+                        - << pipeline.git.branch >>
+                    - equal:
+                        - false
+                        - << pipeline.parameters.param1 >>
+                - or:
+                    - not: << pipeline.parameters.param3 >>
+            - or:
+                - equal:
+                    - false
+                    - << pipeline.parameters.param3 >>
+                - or:
+                    - << pipeline.parameters.param1 >>
+                    - << pipeline.parameters.param2 >>
+        - or:
+            - equal:
+                - true
+                - << pipeline.parameters.param4 >>
+pipeline-runner: runner1
+pipeline-image: hub-image 
